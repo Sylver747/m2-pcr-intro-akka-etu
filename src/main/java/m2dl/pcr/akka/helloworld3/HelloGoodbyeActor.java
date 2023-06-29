@@ -17,7 +17,7 @@ public class HelloGoodbyeActor extends UntypedActor {
         public void apply(Object msg) throws Exception {
             if (msg instanceof String) {
                 log.info("Hello " + msg + "!");
-                getContext().become(goodbye,false);
+                getContext().become(goodbye, false);
             } else {
                 unhandled(msg);
             }

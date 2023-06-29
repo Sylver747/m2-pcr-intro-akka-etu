@@ -18,7 +18,7 @@ public class SimpleHelloWorldActor extends UntypedActor {
         log.info("Received msg: " + msg);
 
         if (msg instanceof String) {
-           log.info("Hello " + msg + "!");
+            log.info("Hello " + msg + "!");
         } else {
             unhandled(msg);
         }

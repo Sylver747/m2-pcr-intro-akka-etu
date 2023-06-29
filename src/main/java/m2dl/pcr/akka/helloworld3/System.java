@@ -3,7 +3,6 @@ package m2dl.pcr.akka.helloworld3;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import m2dl.pcr.akka.helloworld2.HelloActor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,11 +22,11 @@ public class System {
 
         final ActorRef actorRef = actorSystem.actorOf(Props.create(HelloGoodbyeActor.class), "hello-goodbye-actor");
 
-        actorRef.tell("John",null);
-        actorRef.tell("Pauline",null);
-        actorRef.tell("Eva",null);
-        actorRef.tell("Bill",null);
-        actorRef.tell("Marc",null);
+        actorRef.tell("John", null);
+        actorRef.tell("Pauline", null);
+        actorRef.tell("Eva", null);
+        actorRef.tell("Bill", null);
+        actorRef.tell("Marc", null);
 
         Thread.sleep(1000);
 

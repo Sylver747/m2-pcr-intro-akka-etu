@@ -21,7 +21,7 @@ public class HelloActor extends UntypedActor {
     public void onReceive(Object msg) throws Exception {
         if (msg instanceof String) {
             log.info("Hello");
-            nameActorRef.tell(msg,getSelf());
+            nameActorRef.tell(msg, getSelf());
         } else {
             unhandled(msg);
         }

@@ -16,9 +16,10 @@
 4. Éxécutez la classe "System" de ce package. Comment expliquer le comportement du système observé ?
 5. Étudiez le contenu du package "m2dl.pcr.akka.helloworld3".
 6. Éxécutez la classe "System" de ce package. Expliquez le comportement du système observé :
-    - que représentent les objets "hello" et "goodbye" ?
-    - que permet de faire l'exécution de "getContext().unbecome()" ?
-    - que signifie l'utilisation du deuxième paramètre de l'appel à "become" dans la définition de l'objet "hello" ?
+    - que représentent les objets "hello" et "goodbye" ? des comportements
+    - que permet de faire l'exécution de "getContext().unbecome()" ? Revenir au comportement précédent
+    - que signifie l'utilisation du deuxième paramètre de l'appel à "become" dans la définition de l'objet "hello" ? 
+   *true*: remplace la tête de la pile / *false*: sauvegarde dans la pile et change de comportement -> ajoute dans la pile
 
 #### Exercice 1.2
 
@@ -104,5 +105,3 @@ L'objectif de cette activité est le développement d'un serveur et d'un client 
 
 1. Implantez le serveur de discussions.
 2. Implantez un client de votre serveur de discussions en utilisant les librairies d'interface de votre choix (JavaFX, Swing, ligne de commande).
- 
-

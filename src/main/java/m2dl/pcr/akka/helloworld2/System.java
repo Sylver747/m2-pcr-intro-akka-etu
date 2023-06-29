@@ -22,11 +22,11 @@ public class System {
 
         final ActorRef actorRef = actorSystem.actorOf(Props.create(HelloActor.class), "hello-actor");
 
-        actorRef.tell("John",null);
-        actorRef.tell("Pauline",null);
-        actorRef.tell("Eva",null);
-        actorRef.tell("Bill",null);
-        actorRef.tell("Marc",null);
+        actorRef.tell("John", null);
+        actorRef.tell("Pauline", null);
+        actorRef.tell("Eva", null);
+        actorRef.tell("Bill", null);
+        actorRef.tell("Marc", null);
 
         Thread.sleep(1000);
 

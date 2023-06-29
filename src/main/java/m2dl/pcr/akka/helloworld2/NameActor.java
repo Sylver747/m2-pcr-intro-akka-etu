@@ -16,7 +16,7 @@ public class NameActor extends UntypedActor {
     public void onReceive(Object msg) throws Exception {
 
         if (msg instanceof String) {
-           log.info(msg + "!");
+            log.info(msg + "!");
         } else {
             unhandled(msg);
         }
